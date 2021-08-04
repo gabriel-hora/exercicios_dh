@@ -4,10 +4,11 @@ class ListaDeNumeros(var lista: ArrayList<Int>){
 
     fun produto() : Int{
         var result : Int = 0
-
+        var cont : Int = 0
         for(i in lista){
             result += i
+            cont += 1
         }
-        return result
+        return result / cont
     }
 }
