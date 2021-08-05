@@ -1,14 +1,12 @@
 package exercicio_classe
 
-class ListaDeNumeros(var lista: ArrayList<Int>){
+class ListaDeNumeros(var lista: ArrayList<Int>) {
 
-    fun produto() : Int{
-        var result : Int = 0
-        var cont : Int = 0
-        for(i in lista){
-            result += i
-            cont += 1
+    fun produto() {
+        var result: Int = 1
+        for (i in lista) {
+            result *= i
         }
-        return result / cont
+        return println(result)
     }
 }

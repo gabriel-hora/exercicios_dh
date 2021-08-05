@@ -6,11 +6,11 @@ fun main(){
     var numerosDoUsuario : ArrayList<Int> = ArrayList()
     numerosDoUsuario.add(2)
     numerosDoUsuario.add(2)
-    numerosDoUsuario.add(12)
-    numerosDoUsuario.add(45)
+    numerosDoUsuario.add(8)
+
 
     var numeros : ListaDeNumeros = ListaDeNumeros(numerosDoUsuario)
-    println(numeros.produto())
+    numeros.produto()
 }
 
 
