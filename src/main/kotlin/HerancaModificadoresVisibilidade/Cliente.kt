@@ -1,0 +1,4 @@
+package HerancaModificadoresVisibilidade
+
+class Cliente {
+}
