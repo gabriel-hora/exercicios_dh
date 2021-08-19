@@ -2,23 +2,25 @@ package ExercicioAbs
 
 import java.util.*
 
-fun main(){
+fun main() {
 
     val ingressoVIP = IngressoVip()
     val ingressoPadrao = IngressoPadrao()
 
     val scanner = Scanner(System.`in`)
     println("Qual ingresso você quer?")
-    println("""
+    println(
+        """
         1 - IngressoVIP
         2 - IngressoPadrão
-    """.trimIndent())
+    """.trimIndent()
+    )
 
     var escolhaUsuario = scanner.nextInt()
 
-    if(escolhaUsuario == 1){
+    if (escolhaUsuario == 1) {
         ("Você escolheu ${ingressoVIP.imprimeValor()}")
-    }else{
+    } else {
         ("Você escolheu ${ingressoPadrao.imprimeValor()}")
     }
 }
