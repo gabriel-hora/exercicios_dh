@@ -13,7 +13,6 @@ fun main() {
     carrinho.adicionarProdutoNaLista(tablet)
 
     caixa.fechamentoDeConta(cabecalhoDoComprovante, dataDaCompra,
-        { imprimeListaDeCompra(carrinho.listaDeProdutos) },{ adicionaRodape(carrinho.listaDeProdutos)})
-
+        { imprimeListaDeCompra(carrinho.listaDeProdutos) }, { adicionaRodape(carrinho.listaDeProdutos) })
 }
 

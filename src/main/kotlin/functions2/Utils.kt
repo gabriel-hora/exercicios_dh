@@ -10,15 +10,15 @@ val dataDaCompra: () -> String = {
     "${data.get(DATE)}/${data.get(MONTH)}/${data.get(YEAR)}"
 }
 
-fun imprimeListaDeCompra(listaDeItens: ArrayList<Produto>){
-    for(i in listaDeItens){
-       println("${i.nome}: R$ ${i.preco}")
+fun imprimeListaDeCompra(listaDeItens: ArrayList<Produto>) {
+    for (i in listaDeItens) {
+        println("${i.nome}: R$ ${i.preco}")
     }
 }
 
-fun adicionaRodape(listaDeItens: ArrayList<Produto>) : Double{
-    var resultado : Double = 0.0
-    for(i in listaDeItens){
+fun adicionaRodape(listaDeItens: ArrayList<Produto>): Double {
+    var resultado: Double = 0.0
+    for (i in listaDeItens) {
         resultado += i.preco
     }
     return resultado
